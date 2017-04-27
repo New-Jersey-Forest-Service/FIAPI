@@ -20,7 +20,8 @@ print soup.prettify()
 
 #Find the table & check type
 table2 = soup.find_all('table')
-print type(table)
+print(table2)
+print type(table2)
 
 #Create new table as a dataframe
 new_table = pd.DataFrame(columns=range(0-4))
