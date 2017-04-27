@@ -18,7 +18,7 @@ soup = BeautifulSoup(page, 'lxml')
 #Print out the html code with the function prettify
 print soup.prettify()
 
-#Find the table & check type
+#Find the tables & check type
 table2 = soup.find_all('table')
 print(table2)
 print type(table2)
@@ -26,7 +26,7 @@ print type(table2)
 #Create new table as a dataframe
 new_table = pd.DataFrame(columns=range(0-4))
 
-
+#Looping throught the tr and td fields to pull the data
 for row in table2('tr'):
     column_marker = 0
     columns = row.find_all('td')
