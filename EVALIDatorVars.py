@@ -5,7 +5,7 @@ class EVALIDatorVars:
     #default constructor
     def __init__(self):
         #tuple of variable names used in this class
-        v = ('varDict', 'stateDict')
+        v = ('NmDict', 'DmDict', 'stateDict')
         #dictionary of numerator/denominator variables
         self.NmDict = {'aslw':'1','afl':'2','atl':'3','nltfl':'4','ngsfl':'5',\
                        'nsdfl':'6','nlsfl':'7','nlttl':'8','ngstl':'9','nsdtl':'10',\
