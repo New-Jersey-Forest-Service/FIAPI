@@ -5,9 +5,9 @@ class EVALIDatorVars:
     #default constructor
     def __init__(self):
         #tuple of variable names used in this class
-        v = ('NmDict', 'DmDict', 'stateDict')
+        v = ('nmDict', 'dmDict', 'stateDict')
         #dictionary of numerator/denominator variables
-        self.NmDict = {'aslw':'1','afl':'2','atl':'3','nltfl':'4','ngsfl':'5',\
+        self.nmDict = {'aslw':'1','afl':'2','atl':'3','nltfl':'4','ngsfl':'5',\
                        'nsdfl':'6','nlsfl':'7','nlttl':'8','ngstl':'9','nsdtl':'10',\
                        'nlstl':'11','nvltfl':'12','nvgsfl':'13','nvslpfl':'14','gvstfl':'15',\
                        'gvltfl':'16','svltfl':'17','nvsdfl':'18','nvlttl':'19','nvgstl':'20',\
@@ -34,7 +34,7 @@ class EVALIDatorVars:
                        'cfwdspfl':'117','cfwdmpfl':'118','cfwdlpfl':'119','cfwdaspfl':'120',\
                        'ccwdfl':'121','cdwmallfl':'122','tcdwmall':'123','ac-sbirp':'124',\
                        'ac-aflbrp':'125','ac-aflemrp':'126','ac-atlbmrp':'127','ac-atlemrp':'128'}
-        self.DmDict = {'aslw':'1','afl':'2','atl':'3','nltfl':'4','ngsfl':'5',\
+        self.dmDict = {'aslw':'1','afl':'2','atl':'3','nltfl':'4','ngsfl':'5',\
                        'nsdfl':'6','nlsfl':'7','nlttl':'8','ngstl':'9','nsdtl':'10',\
                        'nlstl':'11','nvltfl':'12','nvgsfl':'13','nvslpfl':'14','gvstfl':'15',\
                        'gvltfl':'16','svltfl':'17','nvsdfl':'18','nvlttl':'19','nvgstl':'20',\
