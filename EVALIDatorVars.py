@@ -8,7 +8,7 @@ class EVALIDatorVars:
         v = ('nmDict', 'dmDict', 'stateDict')
         #dictionary of numerator/denominator variables
         self.nmDict = {'Area of sampled land and water, in acres':'aslw','Area of forest land, in acres':'afl','Area of timberland, in acres':'atl',\
-                       'Number of live tress (at least 1 inch d.b.h./d.r.c.), in trees, on forest land':'nltfl','Number of growing-stock trees (at least 5 inches d.b.h.), in trees, on forest land''ngsfl',\
+                       'Number of live tress (at least 1 inch d.b.h./d.r.c.), in trees, on forest land':'nltfl','Number of growing-stock trees (at least 5 inches d.b.h.), in trees, on forest land':'ngsfl',\
                        'Number of standing-dead trees (at least 5 inches d.b.h./d.r.c.), in trees, on forest land':'nsdfl','Number of live seedlings (less than 1 inch d.b.h./d.r.c.), in seedlings, on forest land':'nlsfl',\
                        'Number of live trees (at least 1 inch d.b.h./d.r.c.), in trees, on timberland':'nlttl','Number of growing-stock trees (at least 5 inches d.b.h.), in trees, on timberland':'ngstl',\
                        'Number of standing-dead trees (at least 5 inches d.b.h./d.r.c.), in trees, on timberland':'nsdtl','Number of live seedlings (less than 1 inch d.b.h./d.r.c.), in seedlings, on timberland':'nlstl',\
@@ -64,7 +64,7 @@ class EVALIDatorVars:
                        'Area change - area forest land both measurements from remeasured plots':'ac-aflbrp','Area change - area forest land either measurement from remeasured plots':'ac-aflemrp','Area change - area timberland both measurements from remeasured plots':'ac-atlbmrp',\
                        'Area change - area timberland either measurement from remeasured plots':'ac-atlemrp'}
         self.dmDict = {'No denominator - just produce estimate.':'nodenominator','Area of sampled land and water, in acres':'aslw','Area of forest land, in acres':'afl','Area of timberland, in acres':'atl',\
-                       'Number of live tress (at least 1 inch d.b.h./d.r.c.), in trees, on forest land':'nltfl','Number of growing-stock trees (at least 5 inches d.b.h.), in trees, on forest land''ngsfl',\
+                       'Number of live tress (at least 1 inch d.b.h./d.r.c.), in trees, on forest land':'nltfl','Number of growing-stock trees (at least 5 inches d.b.h.), in trees, on forest land':'ngsfl',\
                        'Number of standing-dead trees (at least 5 inches d.b.h./d.r.c.), in trees, on forest land':'nsdfl','Number of live seedlings (less than 1 inch d.b.h./d.r.c.), in seedlings, on forest land':'nlsfl',\
                        'Number of live trees (at least 1 inch d.b.h./d.r.c.), in trees, on timberland':'nlttl','Number of growing-stock trees (at least 5 inches d.b.h.), in trees, on timberland':'ngstl',\
                        'Number of standing-dead trees (at least 5 inches d.b.h./d.r.c.), in trees, on timberland':'nsdtl','Number of live seedlings (less than 1 inch d.b.h./d.r.c.), in seedlings, on timberland':'nlstl',\
