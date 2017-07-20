@@ -3,7 +3,9 @@
 import urllib2
 import pandas as pd
 
-#specify URL
+#Specify URL
+#This is a local HTML file that is generated from PyEVALIDator.py
+#Copy and paste the local HTML file into the code below
 table = "file:///C:/Users/TMccw/Anaconda2/FiaAPI/outFArea18.html"
 
 #Query the website & return the html to the variable 'page'
@@ -24,9 +26,10 @@ print(table2)
 print type(table2)
 
 #Create new table as a dataframe
-new_table = pd.DataFrame(columns=range(0,4))
+new_table = pd.DataFrame(columns=range(0,5))
 
-#Pull the info from the three tables: Estimate, Sampleing Error, and # of non-zero plots in estimates
+#Pull the info from the three tables: 
+#Estimate, Sampleing Error, and Number of Non-Zero Plots in Estimates
 soup.find('table').find_all('td'),{'align':'right'}
 
 #Remove tags from HTML code
