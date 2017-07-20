@@ -4,7 +4,7 @@ import urllib2
 import pandas as pd
 
 #specify URL
-table = "file:///C:/Users/TMccw/Anaconda2/FiaAPI/outFArea9.html"
+table = "file:///C:/Users/TMccw/Anaconda2/FiaAPI/outFArea18.html"
 
 #Query the website & return the html to the variable 'page'
 page = urllib2.urlopen(table)
@@ -72,4 +72,4 @@ def strip_tags(html):
     return s.get_data()
 
 
-print strip_tags('html &zzz; tags<p>&zzz &zz: will be&amp;replaced</p>with space. NOT this &abc')
+print strip_tags()
