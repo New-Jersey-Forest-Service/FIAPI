@@ -4,8 +4,7 @@
 #Python 2.7
 #dependencies: urllib2, BeautifulSoup
 import urllib2, sys
-#from BeautifulSoup import BeautifulSoup
-from bs4 import BeautifulSoup  #add line for us using Anaconda distro.
+from BeautifulSoup import BeautifulSoup
 
 #fetches table using FIA EVALIDator
 #Batch URL for a given state
@@ -33,7 +32,7 @@ def fetchTable (st, yr, nm, dn, pg, r, c, of):
     url = BASEADDR+RETYPE+LAT+LON+RAD+num+den+stcode+yr+page+row+col+OTHER
     url = spaceReplace(url)
     html = urllib2.urlopen(url).read()
-    soup =BeautifulSoup(html,"lxml")
+    soup =BeautifulSoup(html)
     outfile.write(soup.prettify())
     outfile.close()
 
@@ -48,3 +47,6 @@ def spaceReplace(s):
         else:
             newStr += char
     return newStr
+
+    
+    
