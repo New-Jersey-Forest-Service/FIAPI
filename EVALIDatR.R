@@ -3,7 +3,7 @@ library(rvest)
 
 # VARIABLE NAMES
 # st = FIA state code,
-# yr = year, 
+# yr = year,
 # nm = numerator,
 # dn = denominator,
 # pg = page variable,
@@ -32,12 +32,14 @@ fetchTable = function(st, yr, nm, dn, pg, r, c){
 }
 
 
+
+
 #example of working URL from Miles(2015):
 # http://apps.fs.fed.us/Evalidator/batcheval.jsp?reptype=Circle&lat=45.0&lon=-93.0&radius=50&snum=Area%20of%20timberland,%20in%20acres&sdenom=No%20denominator%20-%20just%20produce%20estimate.&wc=272014,552014&pselected=None&rselected=Stand-size%20class&cselected=Ownership%20group%20-%20Major&ptime=Current&rtime=Current&ctime=Current&wf=&wnum=&wnumdenom=
 
 example = "http://apps.fs.fed.us/Evalidator/batcheval.jsp?reptype=Circle&lat=45.0&lon=-93.0&radius=50&snum=Area%20of%20timberland,%20in%20acres&sdenom=No%20denominator%20-%20just%20produce%20estimate.&wc=272014,552014&pselected=None&rselected=Stand-size%20class&cselected=Ownership%20group%20-%20Major&ptime=Current&rtime=Current&ctime=Current&wf=&wnum=&wnumdenom="
-        
-out=read_html(example) #works 
+
+out=read_html(example) #works
 
 #testing - replicating example from Miles(2015)
 st = "272014,552014"
@@ -52,6 +54,9 @@ c = "Ownership group - Major"
 testing=fetchTable(st, yr, nm, dn, pg, r, c)
 
 testing==example #should return TRUE
+webpage <- read_html(example)
+
+
 
 #rvest syntax example from online
 webpage <- read_html(testing)
@@ -60,3 +65,19 @@ tbl=html_nodes(webpage,"table") #extract nodes
 df=html_table(tbl)[[1]] #put data into dataframe
 
 
+st = "34"
+yr = ""
+nm = "Area of timberland, in acres"
+dn = "No denominator - just produce estimate."
+pg = "None"
+r='Stand age 10 yr classes'
+c='Reserved status class'
+
+
+
+
+              "http://apps.fs.fed.us/Evalidator/batcheval.jsp?reptype=Circle&lat=45.0&lon=-93.0&radius=50&snum=Area%20of%20timberland,%20in%20acres&sdenom=No%20denominator%20-%20just%20produce%20estimate.&wc=272014,552014&pselected=None&rselected=Stand%20age%2010%20yr%20classes&cselected=Reserved%20status%20class&ptime=Current&rtime=Current&ctime=Current&wf=&wnum=&wnumdenom="
+testing_state="https://apps.fs.fed.us/Evalidator/batcheval.jsp?reptype=State&lat=0&lon=-0&radius=0&snum=Area%20of%20timberland,%20in%20acres&sdenom=No%20denominator%20-%20just%20produce%20estimate.&wc=34&pselected=None&rselected=Stand%20age%2010%20yr%20classes&cselected=Reserved%20status%20class&ptime=Current&rtime=Current&ctime=Current&wf=&wnum=&wnumdenom="
+testing_state='http://apps.fs.fed.us/Evalidator/batcheval.jsp?reptype=State&lat=0&lon=-0&radius=0&snum=Area%20of%20timberland,%20in%20acres&sdenom=No%20denominator%20-%20just%20produce%20estimate.&wc=34&pselected=None&rselected=Stand%20age%2010%20yr%20classes&cselected=Reserved%20status%20class&ptime=Current&rtime=Current&ctime=Current&wf=&wnum=&wnumdenom='
+
+webpage <- read_html(testing_state)
