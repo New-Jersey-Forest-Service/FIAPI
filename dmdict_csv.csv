@@ -1,0 +1,130 @@
+"Total volume of DWM (FWD, CWD and piles) in cubic feet, on forest land",tvdwmall
+Area change - area timberland both measurements from remeasured plots,ac-atlbmrp
+"Aboveground dry weight of bark for live trees (at least 1 inch d.b.h./d.r.c.), in short tons, on forest land",agdwbfl
+"Gross volume of sawtimber trees, in board feet (International 1/4-inch rule), on forest land",gvstfl
+"Average annual mortality of growing-stock trees (at least 5 inches d.b.h.), in cubic feet, on timberland",aamgstl
+"Net volume of saw-log portion of sawtimber trees, in cubic feet, on forest land",nvslpfl
+"Aboveground dry weight of live trees (woodland species at least 1 inch d.r.c.), in short tons, on timberland",agdwtl
+"Average annual mortality of trees (at least 5 inches d.b.h./d.r.c.), in cubic feet, on timberland",aamcftl
+"Area of forest land, in acres",afl
+"Average annual other removals of growing-stock trees (at least 5 inches d.b.h.), in cubic feet, on timberland",aaorgstl
+"Average annual net growth of growing-stock trees (at least 5 inches d.b.h.), in cubic feet, on forest land",aanggsfl
+"Average annual removals of growing-stock trees (at least 5 inches d.b.h.), in cubic feet, on forest land",aargsfl
+No denominator - just produce estimate.,nodenominator
+"Average annual net growth of sawtimber trees, in board feet (International 1/4-inch rule), on timberland",aagsttl
+"Belowground carbon in live seedlings, shrubs, and bushes, in short tons, on forest land",bgclssbfl
+"Carbon in litter, in short tons, on forest land",clfl
+"Forest carbon pool 5: soil organic, in metric tonnes, on forest land",fcp5sofl
+Area change - area forest land either measurement from remeasured plots,ac-aflemrp
+"Total volume of FWD (all sizes) pieces, in cubic feet, on forest land",tvfwdaspfl
+"Carbon in organic soil, in short tons, on forest land",cosfl
+"Forest carbon pool 3: dead wood, in metric tonnes, on forest land",fcp3dwfl
+"Total carbon in DWM (FWD, CWD and piles) in short tons, on forest land",tcdwmall
+"Average annual net growth of live trees (at least 5 inches d.b.h./d.r.c.), in cubic feet, on timberland",aangtl
+"Above and belowground carbon in live trees (at least 1 inch d.b.h./d.r.c), in short tons, on forest land",agbgcfl
+"Aboveground dry weight of standing-dead trees (at least 5 inches d.b.h./d.r.c.), in short tons, on forest land",agdwsdfl
+Area change - area timberland either measurement from remeasured plots,ac-atlemrp
+"Average annual harvest removals of sawtimber trees, in board feet (International 1/4-inch rule), on timberland",aahrswtl
+"Aboveground merchantable dry weight of live trees (at least 5 inches d.b.h./d.r.c), in short tons, on timberland calculated with retired regional methods",agmdwtlrrm
+"Average annual mortality of trees (at least 5 inches d.b.h./d.r.c.), in trees, on forest land",aamfl
+"Average annual removals of live trees (at least 5 inches d.b.h./d.r.c.), in cubic feet, on timberland",aartl
+"Average annual other removals of growing-stock trees (at least 5 inches d.b.h.), in cubic feet, on forest land",aaorgsfl
+"Net volume of live trees (at least 5 inches d.b.h./d.r.c.), in cubic feet, on forest land",nvltfl
+"Dry weight of tops and limbs for live trees (timber species at least 5 inches d.b.h.), in short tons, on timberland",dwtltl
+"Number of standing-dead trees (at least 5 inches d.b.h./d.r.c.), in trees, on forest land",nsdfl
+"Aboveground dry weight of live trees (at least 1 inch d.b.h./d.r.c), in short tons, on timberland",agdwtl
+"Net volume of sawtimber trees, in board feet (International 1/4-inch rule), on forest land",nvstfl
+"Carbon in organic soil, in short tons, on timberland",costl
+"Carbon in litter, in short tons, on timberland",cltl
+"Above and belowground carbon in live trees (at least 1 inch d.b.h./d.r.c), in short tons, on timberland",agbgctl
+Area change - sampled at both inventories by remeasured plots,ac-sbirp
+"Forest carbon pool 1: live aboveground, in metric tonnes, on forest land",fcp1lagfl
+"Carbon in FWD (medium) pieces, in short tons, on forest land",cfwdmpfl
+"Average annual harvest removals of growing-stock trees (at least 5 inches d.b.h.), in cubic feet, on timberland",aahrgstl
+"Total volume of CWD, in cubic feet, on forest land",tvcwdfl
+"Net volume of standing-dead trees (at least 5 inches d.b.h./d.r.c.), in cubic feet, on forest land",nvsdfl
+"Total carbon, in short tons, on forest land",tcfl
+"Dry weight of stumps for live trees (timber species at least 5 inches d.b.h.), in short tons, on forest land",dwsfl
+"Average annual other removals of live trees (at least 5 inches d.b.h./d.r.c.), in cubic feet, on forest land",aaorfl
+"Dry weight of tops and limbs for live trees (timber species at least 5 inches d.b.h.), in short tons, on forest land",dwtlfl
+"Average annual removals of sawtimber trees, in board feet (International 1/4-inch rule), on forest land",aarstfl
+"Gross volume of live trees (at least 5 inches d.b.h./d.r.c.), in cubic feet, on forest land",gvltfl
+"Carbon in FWD (all sizes) pieces, in short tons, on forest land",cfwdaspfl
+"Aboveground carbon in live seedlings, shrubs, and bushes, in short tons, on forest land",agclssbfl
+"Aboveground dry weight of live saplings (timber species at least 1 and less than 5 inches d.b.h.), in short tons, on timberland",agdwlstl
+"Average annual removals of sawtimber trees, in board feet (International 1/4-inch rule), on timberland",aarsttl
+"Average annual other removals of live trees (at least 5 inches d.b.h./d.r.c.), in cubic feet, on timberland",aaortl
+"Number of live seedlings (less than 1 inch d.b.h./d.r.c.), in seedlings, on timberland",nlstl
+"Dry weight of FWD (small) pieces, in short tons, on forest land",dwfwdspfl
+"Average annual harvest removals of growing-stock trees (at least 5 inches d.b.h.), in cubic feet, on forest land",aahrgsfl
+"Aboveground dry weight of live trees (at least 1 inch d.b.h./d.r.c), in short tons, on forest land calculated with retired regional methods",agdwfl
+"Average annual removals of live trees (at least 5 inches d.b.h./d.r.c.), in cubic feet, on forest land",aarfl
+"Belowground carbon in live trees (at least 1 inch d.b.h./d.r.c), in short tons, on timberland",bgctl
+"Carbon in DWM piles, in short tons, on forest land",cdwmallfl
+"Average annual harvest removals of live trees (at least 5 inches d.b.h./d.r.c.), in cubic feet, on timberland",aahrtl
+"Belowground dry weight of live trees (at least 1 inch d.b.h./d.r.c), in short tons, on forest land",bgdwfl
+"Forest carbon total: all 5 pools, in metric tonnes, on forest land",fctfl
+"Aboveground carbon in live trees (at least 1 inch d.b.h./d.r.c), in short tons, on timberland",agctl
+"Belowground carbon in live trees (at least 1 inch d.b.h./d.r.c), in short tons, on forest land",bgcfl
+"Number of CWD pieces, in pieces, on forest land",ncwdpfl
+"Total volume of FWD (large) pieces, in cubic feet, on forest land",tvfwdlpfl
+"Dry weight of FWD (large) pieces, in short tons, on forest land",dwfwdlpfl
+"Average annual mortality of growing-stock trees (at least 5 inches d.b.h.), in cubic feet, on forest land",aamgsfl
+"Carbon in CWD, in short tons, on forest land",ccwdfl
+"Dry weight of FWD (all sizes) pieces, in short tons, on forest land",dwfwdaspfl
+"Above and belowground carbon in standing-dead trees (at least 1 inch d.b.h./d.r.c), in short tons, on forest land",agbgcsdfl
+"Dry weight of merchantable bole for live trees (timber species at least 5 inches d.b.h.), in short tons, on forest land",dwmbfl
+"Total dry weight of DWM (FWD, CWD and piles) in short tons, on forest land",tdwdwmallfl
+"Average annual harvest removals of live trees (at least 5 inches d.b.h./d.r.c.), in cubic feet, on forest land",aahrfl
+"Carbon in stumps, coarse roots, and coarse woody debris, in short tons, on forest land",cscrcwdfl
+"Average annual mortality of sawtimber trees, in board feet (International 1/4-inch rule), on timberland",aamsttl
+"Carbon in FWD (small) pieces, in short tons, on forest land",cfwdspfl
+"Dry weight of stumps for live trees (timber species at least 5 inches d.b.h.), in short tons, on timberland",dwstl
+"Area of timberland, in acres",atl
+"Net volume of growing-stock trees (at least 5 inches d.b.h.), in cubic feet, on forest land",nvgsfl
+"Number of standing-dead trees (at least 5 inches d.b.h./d.r.c.), in trees, on timberland",nsdtl
+"Total volume of FWD (medium) pieces, in cubic feet, on forest land",tvfwdmpfl
+"Number of growing-stock trees (at least 5 inches d.b.h.), in trees, on timberland",ngstl
+"Number of live tress (at least 1 inch d.b.h./d.r.c.), in trees, on forest land",nltfl
+"Net volume of standing-dead trees (at least 5 inches d.b.h./d.r.c.), in cubic feet, on timberland",nvsdtl
+"Average annual harvest removals of sawtimber trees, in board feet (International 1/4-inch rule), on forest land",aahrswfl
+"Aboveground dry weight of live saplings (timber species at least 1 and less than 5 inches d.b.h.), in short tons, on forest land",agdwlsfl
+"Carbon in stumps, coarse roots, and coarse woody debris, in short tons, on timberland",cscrcwdtl
+"Number of growing-stock trees (at least 5 inches d.b.h.), in trees, on forest land",ngsfl
+"Average annual net growth of sawtimber trees, in board feet (International 1/4-inch rule), on forest land",aagstfl
+"Net volume of sawtimber trees, in board feet (International 1/4-inch rule), on timberland",nvsttl
+"Net volume of saw-log portion of sawtimber trees, in cubic feet, on timberland",nvslptl
+"Aboveground dry weight of live trees (at least 1 inch d.b.h./d.r.c), in short tons, on timberland calculated with retired regional methods",agdwtlrrm
+"Total volume of DWM piles, in cubic feet, on forest land",tvdwmpfl
+"Dry weight of DWM piles, in short tons, on forest land",dwdwmpfl
+"Forest carbon pool 4: litter, in metric tonnes, on forest land",fcp4lfl
+"Belowground carbon in live seedlings, shrubs, and bushes, in short tons, on timberland",bgclssbtl
+"Area of sampled land and water, in acres",aslw
+"Average annual mortality of sawtimber trees, in board feet (International 1/4-inch rule), on forest land",aamstfl
+"Dry weight of FWD (medium) pieces, in short tons, on forest land",dwfwdmpfl
+"Net volume of live trees (at least 5 inches d.b.h./d.r.c.), in cubic feet, on timberland",nvlttl
+"Belowground dry weight of live trees (at least 1 inch d.b.h./d.r.c), in short tons, on timberland",bgdwtl
+"Dry weight of merchantable bole for live trees (timber species at least 5 inches d.b.h.), in short tons, on timberland",dwmbtl
+"Average annual other removals of sawtimber trees, in board feet (International 1/4-inch rule), on forest land",aaorstfl
+"Number of live seedlings (less than 1 inch d.b.h./d.r.c.), in seedlings, on forest land",nlsfl
+"Sound volume of live trees (at least 5 inches d.b.h./d.r.c.), in cubic feet, on forest land",svltfl
+Area change - area forest land both measurements from remeasured plots,ac-aflbrp
+"Average annual other removals of sawtimber trees, in board feet (International 1/4-inch rule), on timberland",aaorsttl
+"Carbon in FWD (large) pieces, in short tons, on forest land",cfwdlpfl
+"Aboveground green weight of live trees (at least 1 inch d.b.h./d.r.c.), in short tons, on forest land",aggwfl
+"Average annual net growth of live trees (at least 5 inches d.b.h./d.r.c.), in cubic feet, on forest land",aangfl
+"Number of live trees (at least 1 inch d.b.h./d.r.c.), in trees, on timberland",nlttl
+"Total volume of FWD (small) pieces, in cubic feet, on forest land",tvfwdspfl
+"Aboveground carbon in live trees (at least 1 inch d.b.h./d.r.c), in short tons, on forest land",agcfl
+"Average annual mortality of trees (at least 5 inches d.b.h./d.r.c.), in cubic feet, on forest land",aamcffl
+"Average annual mortality of trees (at least 5 inches d.b.h./d.r.c.), in trees, on timberland",aamtl
+"Net volume of growing-stock trees (at least 5 inches d.b.h.), in cubic feet, on timberland",nvgstl
+"Dry weight of CWD, in short tons, on forest land",dwcwdfl
+"Aboveground carbon in live seedlings, shrubs, and bushes, in short tons, on timberland",agclssbtl
+"Average annual removals of growing-stock trees (at least 5 inches d.b.h.), in cubic feet, on timberland",aargstl
+"Aboveground dry weight of live trees (woodland species at least 1 inch d.r.c.), in short tons, on forest land",agdwfl
+"Aboveground dry weight of live trees (at least 1 inch d.b.h./d.r.c), in short tons, on forest land",agdwfl
+"Above and belowground carbon in standing-dead trees (at least 1 inch d.b.h./d.r.c), in short tons, on timberland",agbgcsdtl
+"Average annual net growth of growing-stock trees (at least 5 inches d.b.h.), in cubic feet, on timberland",aanggstl
+"Forest carbon pool 2: live belowground, in metric tonnes, on forest land",fcp2lbgfl
+"Aboveground merchantable dry weight of live trees (at least 5 inches d.b.h./d.r.c), in short tons, on forest land calculated with retired regional methods",agmdwfl
