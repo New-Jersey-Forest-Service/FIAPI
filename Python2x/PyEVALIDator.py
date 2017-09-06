@@ -1,5 +1,5 @@
 #PyEVALIDator.py
-#V 1.1
+#V 1.2
 #William Zipse, NJ Forest Service, 11/2016
 #Python 2.7
 #dependencies: urllib2, BeautifulSoup
@@ -33,7 +33,7 @@ def fetchTable (st, yr, nm, dn, pg, r, c, of):
     url = BASEADDR+RETYPE+LAT+LON+RAD+num+den+stcode+yr+page+row+col+OTHER
     url = spaceReplace(url)
     html = urllib2.urlopen(url).read()
-    soup =BeautifulSoup(html,"lxml")
+    soup =BeautifulSoup(html)
     outfile.write(soup.prettify())
     outfile.close()
 
