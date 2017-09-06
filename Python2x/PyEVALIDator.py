@@ -1,10 +1,11 @@
 #PyEVALIDator.py
-#V 1.1
+#V 1.2
 #William Zipse, NJ Forest Service, 11/2016
 #Python 2.7
 #dependencies: urllib2, BeautifulSoup
 import urllib2, sys
 from BeautifulSoup import BeautifulSoup
+#from bs4 import BeautifulSoup #for us using Anaconda Distro
 
 #fetches table using FIA EVALIDator
 #Batch URL for a given state
@@ -47,6 +48,3 @@ def spaceReplace(s):
         else:
             newStr += char
     return newStr
-
-    
-    
