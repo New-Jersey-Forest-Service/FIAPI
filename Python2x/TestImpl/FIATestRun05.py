@@ -18,7 +18,7 @@ def main():
 
     print "Let's make some tables!"
     for state in states:
-        st = state[1]
+        st = ev.stateDict[state]
         of = 'output'+st+'.html'
         fetchTable(st, yr, nm, dn, pg, r, c, of)
     print 'DONE!'
