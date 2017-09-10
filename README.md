@@ -10,8 +10,8 @@ Use Case: By providing users with a standardized interface to access data, users
 
 ## Installation Instructions for Mac
 1. Install the latest version of Python 2.7. This can be installed from (https://www.python.org/downloads/release/python-2713/)
-2. Next, install the library BeautifulSoup. The easiest way to install this is with pip. 
-   -If you don't have pip, run **sudo easy_install pip** in your terminal.
+2.Next, install the library BeautifulSoup. The easiest way to install this is with pip. 
+  -If you don't have pip, run **sudo easy_install pip** in your terminal.
     
     -Then run **pip install BeautifulSoup**
     
