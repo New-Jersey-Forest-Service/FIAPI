@@ -12,14 +12,16 @@ library(rvest)
 # of = output file name (currently html file)
 # all arguments are strings
 
-fetchTable = function(type,lat="&lat=0",lon="&lon=-0",rad="&radius=0",st, yr, nm, dn, pg, r, c){
+#define function to take parameters and build connection string with default behavior to state queries
+
+fetchTable = function(type,lat="0",lon="-0",rad="0",st, yr, nm, dn, pg, r, c){
     BASEADDR = "http://apps.fs.fed.us/Evalidator/batcheval.jsp?"
     RETYPE=ifelse(test=(type=="radius"),
-      yes="reptype=Radius",
+      yes="reptype=Circle",
       no="reptype=State")
-    LAT = lat
-    LON = lon
-    RAD = rad
+    LAT = paste("&lat=",lat,sep="")
+    LON = paste("&lon=",lon,sep="")
+    RAD = paste("&radius=",rad,sep="")
     num = paste("&snum=",nm,sep="")
     den = paste("&sdenom=",dn,sep="")
     stcode = paste("&wc=",st,sep="")
