@@ -7,3 +7,5 @@ FIAPI provides webscraping capabilities for EVALIDator queries using Python 2.7 
 Python functionality is provided using the BeautifulSoup package (https://www.crummy.com/software/BeautifulSoup/), while the R version utilizes the library Rvest (https://github.com/hadley/rvest).
 
 Use Case: By providing users with a standardized interface to access data, users can have the most up to date data pull without waiting for an MS Access DB to be released. {to be continued...}
+
+# Installation Instructions
