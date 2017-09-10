@@ -8,4 +8,6 @@ Python functionality is provided using the BeautifulSoup package (https://www.cr
 
 Use Case: By providing users with a standardized interface to access data, users can have the most up to date data pull without waiting for an MS Access DB to be released. {to be continued...}
 
-# Installation Instructions
+## Installation Instructions for Mac
+1. Install the latest version of Python 2.7. This can be installed from (https://www.python.org/downloads/release/python-2713/)
+2. 
