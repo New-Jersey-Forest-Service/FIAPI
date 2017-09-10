@@ -20,3 +20,4 @@ Use Case: By providing users with a standardized interface to access data, users
    - Hit enter and the repository will be cloned onto your computer.
 4. Navigate to the FIAPI/Python2x/TestImpl folder in the terminal.
 5. In your terminal run **python FIATestRun05.py** and the test code will run.
+6. In the same folder you should see 3 new html files, which are the html tables that have been retrieved.
