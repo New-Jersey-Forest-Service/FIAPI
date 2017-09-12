@@ -5,7 +5,7 @@ class EVALIDatorVars:
     #default constructor
     def __init__(self):
         #tuple of variable names used in this class
-        v = ('nmDict', 'dmDict', 'stateDict')
+        v = ('nmDict', 'dmDict', 'stateDict', 'rowDict', 'colDict')
         #dictionary of numerator/denominator variables
         self.nmDict = {'aslw':'Area of sampled land and water, in acres','afl':'Area of forest land, in acres','atl':'Area of timberland, in acres',\
                        'nltfl':'Number of live tress (at least 1 inch d.b.h./d.r.c.), in trees, on forest land','ngsfl':'Number of growing-stock trees (at least 5 inches d.b.h.), in trees, on forest land',\
@@ -134,3 +134,21 @@ class EVALIDatorVars:
                           'TN':'47','TX':'48','UT':'49','VT':'50','VA':'51',\
                           'WA':'53','WV':'54','WI':'55','WY':'56','PR':'72',\
                           'VI':'78'}
+
+        self.rowDict = {'ta' : 'Trend analysis - StateInventories for rows...no pages','als' : 'All live stocking', 'ararc' : 'AppalachianRegionARC','ars' : 'Artificial regen species', 'aspect' : 'Aspect', 'baal' : 'Basal area all live', 'cn' : 'Condition number',\
+                        'cp' : 'Condition proportion', 'cd' : 'Congressional District', 'ccan' : 'County code and name', 'cg' : 'CountyGroup', 'dtr' : 'Distance to road', 'dist1' : 'Disturbance 1', 'dist2' : 'Disturbance 2', 'dist3' : 'Disturbance 3',\
+                        'ema' : 'EMAPHEX', 'es' : 'Ecoregion section', 'esb' : 'Ecoregion subsection', 'elevation' : 'Elevation', 'fsr' : 'Forest Service Region', 'ftm' : 'Forest Type MnDNR', 'ft' : 'Forest Type', 'ftfc' : 'Forest type field call', 'ftg' : 'Forest type group',\
+                        'ftga' : 'Forest type group abbr', 'gss' : 'Growing-stock stocking', 'huc8' : 'Hydrological Unit Code 8', 'isn' : 'Inventory subcycle number', 'iy' : 'Inventory year', 'lum' : 'Land Use - Major', 'lc' : 'Land class', 'lu' : 'Land use',\
+                        'mr' : 'Major region', 'nfs' : 'NFS Region ALP', 'nf' : 'National Forests', 'nfa' : 'National Forests: ALP', 'oc' : 'Ownership class', 'og' : 'Ownership group', 'ogm' : 'Ownership group - Major', 'ofs' : 'Ownership with all FS classes',\
+                        'pc' : 'Physiographic class', 'pnc' : 'Present nonforest code remeasurement plots', 'pd' : 'Primary disturbance', 'rpa' : 'RPA Subregion State', 'rss' : 'Reserved status class', 'si' : 'Site index', 'spc' : 'Site productivity class',\
+                        'slope' : 'Slope', 'sffsr' : 'SoForFuturesSubReg', 'sa10' : 'Stand age 10 yr classes', 'sa100' : 'Stand age 20 yr classes (0 to 100+)', 'sa500' : 'Stand age 20 yr classes (0 to 500+)', 'sa5' : 'Stand age 5 yr classes',\
+                        'so' : 'Stand origin', 'sos' : 'Stand origin species', 'st1' : 'Stand treatment 1', 'st2' : 'Stand treatment 2', 'ssc' : 'Stand-size class', 'ss' : 'Stand-size(field call)', 'sc' : 'State code', 'uc' : 'Unit code'}
+
+        self.colDict = {'als' : 'All live stocking', 'ararc' : 'AppalachianRegionARC', 'aspect' : 'Aspect', 'baal' : 'Basal area all live', 'cn' : 'Condition number',\
+                        'cp' : 'Condition proportion', 'dtr' : 'Distance to road', 'dist1' : 'Disturbance 1', 'dist2' : 'Disturbance 2', 'dist3' : 'Disturbance 3',\
+                        'elevation' : 'Elevation', 'fsr' : 'Forest Service Region', 'ftm' : 'Forest Type MnDNR',\
+                        'ftga' : 'Forest type group abbr', 'gss' : 'Growing-stock stocking', 'isn' : 'Inventory subcycle number', 'iy' : 'Inventory year', 'lum' : 'Land Use - Major', 'lc' : 'Land class', 'lu' : 'Land use',\
+                        'mr' : 'Major region', 'nfs' : 'NFS Region ALP', 'nf' : 'National Forests', 'oc' : 'Ownership class', 'og' : 'Ownership group', 'ogm' : 'Ownership group - Major', 'ofs' : 'Ownership with all FS classes',\
+                        'pc' : 'Physiographic class', 'pnc' : 'Present nonforest code remeasurement plots', 'pd' : 'Primary disturbance', 'rpa' : 'RPA Subregion State', 'rss' : 'Reserved status class', 'si' : 'Site index', 'spc' : 'Site productivity class',\
+                        'slope' : 'Slope', 'sa10' : 'Stand age 10 yr classes', 'sa100' : 'Stand age 20 yr classes (0 to 100+)', 'sa500' : 'Stand age 20 yr classes (0 to 500+)', 'sa5' : 'Stand age 5 yr classes',\
+                        'so' : 'Stand origin', 'st1' : 'Stand treatment 1', 'st2' : 'Stand treatment 2', 'ssc' : 'Stand-size class', 'ss' : 'Stand-size(field call)'}
