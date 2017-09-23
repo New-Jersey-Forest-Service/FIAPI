@@ -1,3 +1,8 @@
+'''
+This implementation tests fetchTable() from
+PyEVALIDator and adds row and column variable
+tests from EVALIDatorVars
+'''
 from PyEVALIDator import fetchTable
 import csv
 from EVALIDatorVars import *
