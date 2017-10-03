@@ -6,7 +6,7 @@ Type "copyright", "credits" or "license()" for more information.
 # Abi Arya & Tim McWilliams
 
 # Import needed packages 
-import urlib2
+import urllib2
 import sys
 import re
 import csv
@@ -22,7 +22,7 @@ from bs4 import BeautifulSoup
 # Var 1
 def cell_text1(cell):
     return " ".join(cell.stripped_strings)
-url ="http://apps.fs.fed.us/Evalidator/batcheval.jsp?reptype=State&lat=0&lon=-0&radius=0&snum=Area%20of%20forest%20land,%20in%20acres&sdenom=No%20denominator%20-%20just%20produce%20estimate.&wc=92015&pselected=None&rselected=Forest%20type%20group&cselected=Ownership%20group&ptime=Current&rtime=Current&ctime=Current&wf=&wnum=&wnumdenom="
+url ="file:///C:/Users/TMccw/OneDrive/StateForestService/FIAPI/GitHub/FIAPI_Local/Python2x/outFArea10.html"
 html = urllib2.urlopen(url).read()
 soup =BeautifulSoup(html, "html.parser")
 output = csv.writer(sys.stdout)
@@ -41,80 +41,79 @@ for table in soup.find_all('table'):
 # Var 2
 def cell_text2(cell):
     return " ".join(cell.stripped_strings)
-url2 ="http://apps.fs.fed.us/Evalidator/batcheval.jsp?reptype=State&lat=0&lon=-0&radius=0&snum=Area%20of%20forest%20land,%20in%20acres&sdenom=No%20denominator%20-%20just%20produce%20estimate.&wc=92015&pselected=None&rselected=Forest%20type%20group&cselected=Ownership%20group&ptime=Current&rtime=Current&ctime=Current&wf=&wnum=&wnumdenom="
-html2 = urllib2.urlopen(url2).read()
-soup2 =BeautifulSoup(html2, "html.parser")
-output2 = csv.writer(sys.stdout)
+url ="file:///C:/Users/TMccw/OneDrive/StateForestService/FIAPI/GitHub/FIAPI_Local/Python2x/outFArea17.html"
+html = urllib2.urlopen(url).read()
+soup =BeautifulSoup(html, "html.parser")
+output = csv.writer(sys.stdout)
 
 for table in soup.find_all('table'):
    # title=table.find('caption')
-    title2=table.b
+    title=table.b
     if(title != None):
         print(title.string.extract())
 
         for row in table.find_all('tr'):
-            col2 = map(cell_text2, row.find_all(re.compile('t[dh]')))
-            output.writerow(col2)
+            col = map(cell_text2, row.find_all(re.compile('t[dh]')))
+            output.writerow(col)
         output.writerow([])
         
 # Var 3
 def cell_text3(cell):
     return " ".join(cell.stripped_strings)
-url3 ="http://apps.fs.fed.us/Evalidator/batcheval.jsp?reptype=State&lat=0&lon=-0&radius=0&snum=Area%20of%20forest%20land,%20in%20acres&sdenom=No%20denominator%20-%20just%20produce%20estimate.&wc=92015&pselected=None&rselected=Forest%20type%20group&cselected=Ownership%20group&ptime=Current&rtime=Current&ctime=Current&wf=&wnum=&wnumdenom="
-html3 = urllib2.urlopen(url3).read()
-soup3 =BeautifulSoup(html3, "html.parser")
-output3 = csv.writer(sys.stdout)
+url ="file:///C:/Users/TMccw/OneDrive/StateForestService/FIAPI/GitHub/FIAPI_Local/Python2x/outFArea18.html"
+html = urllib2.urlopen(url).read()
+soup =BeautifulSoup(html, "html.parser")
+output = csv.writer(sys.stdout)
 
 for table in soup.find_all('table'):
    # title=table.find('caption')
-    title3=table.b
+    title=table.b
     if(title != None):
         print(title.string.extract())
 
         for row in table.find_all('tr'):
-            col3 = map(cell_text3, row.find_all(re.compile('t[dh]')))
-            output.writerow(col3)
+            col = map(cell_text3, row.find_all(re.compile('t[dh]')))
+            output.writerow(col)
         output.writerow([])
 
 # Var 4
 def cell_text4(cell):
     return " ".join(cell.stripped_strings)
-url4 ="http://apps.fs.fed.us/Evalidator/batcheval.jsp?reptype=State&lat=0&lon=-0&radius=0&snum=Area%20of%20forest%20land,%20in%20acres&sdenom=No%20denominator%20-%20just%20produce%20estimate.&wc=92015&pselected=None&rselected=Forest%20type%20group&cselected=Ownership%20group&ptime=Current&rtime=Current&ctime=Current&wf=&wnum=&wnumdenom="
-html4 = urllib2.urlopen(url4).read()
-soup4 =BeautifulSoup(html4, "html.parser")
-output4 = csv.writer(sys.stdout)
+url ="file:///C:/Users/TMccw/OneDrive/StateForestService/FIAPI/GitHub/FIAPI_Local/Python2x/outFArea19.html"
+html = urllib2.urlopen(url).read()
+soup =BeautifulSoup(html, "html.parser")
+output = csv.writer(sys.stdout)
 
 for table in soup.find_all('table'):
    # title=table.find('caption')
-    title4=table.b
+    title=table.b
     if(title != None):
         print(title.string.extract())
 
         for row in table.find_all('tr'):
-            col4 = map(cell_text4, row.find_all(re.compile('t[dh]')))
-            output.writerow(col4)
+            col = map(cell_text4, row.find_all(re.compile('t[dh]')))
+            output.writerow(col)
         output.writerow([])
         
 # Var 5
 def cell_text5(cell):
     return " ".join(cell.stripped_strings)
-url5 ="http://apps.fs.fed.us/Evalidator/batcheval.jsp?reptype=State&lat=0&lon=-0&radius=0&snum=Area%20of%20forest%20land,%20in%20acres&sdenom=No%20denominator%20-%20just%20produce%20estimate.&wc=92015&pselected=None&rselected=Forest%20type%20group&cselected=Ownership%20group&ptime=Current&rtime=Current&ctime=Current&wf=&wnum=&wnumdenom="
-html5 = urllib2.urlopen(url5).read()
-soup5 =BeautifulSoup(html5, "html.parser")
-output5 = csv.writer(sys.stdout)
+url ="file:///C:/Users/TMccw/OneDrive/StateForestService/FIAPI/GitHub/FIAPI_Local/Python2x/outFArea20.html"
+html = urllib2.urlopen(url).read()
+soup =BeautifulSoup(html, "html.parser")
+output = csv.writer(sys.stdout)
 
 for table in soup.find_all('table'):
    # title=table.find('caption')
-    title5=table.b
+    title=table.b
     if(title != None):
         print(title.string.extract())
 
         for row in table.find_all('tr'):
-            col5 = map(cell_text5, row.find_all(re.compile('t[dh]')))
-            output.writerow(col5)
+            col = map(cell_text5, row.find_all(re.compile('t[dh]')))
+            output.writerow(col)
         output.writerow([])
         
-
 # Final function that brings together and calls the functions in Section 1     
 def main():
     cell_text1(cell)
@@ -125,4 +124,4 @@ def main():
 
 # Calling the function 'main'
 if __name__ == '__main__':
-    main()
+    print(main())
