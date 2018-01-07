@@ -34,6 +34,4 @@ Use Case: By providing users with a standardized interface to access data, users
 5. Now you can run the FIATestRun05.py to test out the library. In command prompt type **C:\Path\to\Python27\python.exe C:\Path\to\FIAPI\Python2x\TestImpl\FIATestRun05.py**
 
 ## Licensing
-The license found at the root of this project applies to the entire project EXCEPT where a separate license is included in a subfolder of this repository.  In these cases, the license found in the subfolder applies to all files contained in that subfolder and subfolders contained within, unless otherwise specified.
-
 No code was modified in the "Requests" library for Python for use in this project.  Licensing for "Requests" may be found at: http://docs.python-requests.org/en/master/user/intro/#requests-license
