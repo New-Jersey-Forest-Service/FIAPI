@@ -2,7 +2,7 @@
 Applications and Libraries for USDA Forest Service, FIA Program's EVALIDator
 
 
-FIAPI provides webscraping capabilities for EVALIDator queries using Python 2.7 or R. This library follows the protocol released by FIA detailing protocols for retreiving queries by building HTML strings directly (Miles 2015).
+FIAPI provides batch reporting capabilities for EVALIDator queries using Python 2.7 or R. This library follows the protocol released by FIA detailing protocols for retreiving queries by building HTML strings directly (Miles 2015: https://apps.fs.usda.gov/fia/datamart/datamart_api_tutorials.html).
 
 Python functionality is provided using the BeautifulSoup package (https://www.crummy.com/software/BeautifulSoup/), while the R version utilizes the library Rvest (https://github.com/hadley/rvest).
 
@@ -32,3 +32,8 @@ Use Case: By providing users with a standardized interface to access data, users
    - Once setup, run **git clone https://github.com/wzip/FIAPI.git** (this is the link you copied). 
 4. After that, navigate to the FIAPI/Python2x directory and open the PyEVALIDator.py in notepad. Near the top add a **#** in front of **from BeautifulSoup import BeautifulSoup**, and get rid of the **#** in front of the **from bs4 import BeautifulSoup**. Lastly, save the file.
 5. Now you can run the FIATestRun05.py to test out the library. In command prompt type **C:\Path\to\Python27\python.exe C:\Path\to\FIAPI\Python2x\TestImpl\FIATestRun05.py**
+
+## Licensing
+The license found at the root of this project applies to the entire project EXCEPT where a separate license is included in a subfolder of this repository.  In these cases, the license found in the subfolder applies to all files contained in that subfolder and subfolders contained within.
+
+No code was modified in the "Requests" library for Python for use in this project.  Licensing for "Requests" may be found at: http://docs.python-requests.org/en/master/user/intro/#requests-license
