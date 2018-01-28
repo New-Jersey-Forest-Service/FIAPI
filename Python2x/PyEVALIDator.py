@@ -14,13 +14,16 @@ pg = page variable, r = row variable, c = column variable,
 of = output file name (currently html file)
 all arguments are strings
 '''
-def fetchTable (st, yr, nm, dn, pg, r, c, of):
+def fetchTable (st, yr, nm, dn, pg, r, c, of, lat = 0, lon =0, rad =0):
     outfile = open(of, 'wb')
     BASEADDR = 'http://apps.fs.fed.us/Evalidator/batcheval.jsp?'
-    RETYPE = 'reptype=State'
-    LAT = '&lat=0'
-    LON = '&lon=-0'
-    RAD = '&radius=0'
+    if(lat==0 and lon ==0 and rad ==0):
+        RETYPE = 'reptype=State'
+    else:
+        RETYPE = 'reptype=Circle'
+    LAT = '&lat=' + str(lat)
+    LON = '&lon=' + str(lon)
+    RAD = '&radius=' + str(rad)
     num = '&snum='+nm
     den = '&sdenom='+dn
     stcode = '&wc='+st
@@ -35,6 +38,7 @@ def fetchTable (st, yr, nm, dn, pg, r, c, of):
     soup = BeautifulSoup(html.content, 'html.parser')
     outfile.write(soup.prettify())
     outfile.close()
+
 
 #replaces spaces with %20 for clean processing of URL's
 #takes a string argument
