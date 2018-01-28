@@ -1,11 +1,10 @@
 #PyEVALIDator.py
-#V 1.2
-#William Zipse, NJ Forest Service, 11/2016
+#V 1.3
+#NJ Forest Service, 11/2016
 #Python 2.7
-#dependencies: urllib2, BeautifulSoup
-import urllib2, sys
-from BeautifulSoup import BeautifulSoup
-#from bs4 import BeautifulSoup #for us using Anaconda Distro
+#dependencies: requests, bs4
+import requests, sys
+from bs4 import BeautifulSoup
 #testing push
 #fetches table using FIA EVALIDator
 #Batch URL for a given state
@@ -32,8 +31,8 @@ def fetchTable (st, yr, nm, dn, pg, r, c, of):
     OTHER = '&ptime=Current&rtime=Current&ctime=Current&wf=&wnum=&wnumdenom='
     url = BASEADDR+RETYPE+LAT+LON+RAD+num+den+stcode+yr+page+row+col+OTHER
     url = spaceReplace(url)
-    html = urllib2.urlopen(url).read()
-    soup =BeautifulSoup(html)
+    html = requests.get(url)
+    soup = BeautifulSoup(html.content, 'html.parser')
     outfile.write(soup.prettify())
     outfile.close()
 
