@@ -26,7 +26,7 @@ class FirstPage(Tkinter.Tk):
         self.entry = Tkinter.Entry(self)
         self.geometry("450x300")
 
-        def infile():
+        def stateQueries():
             inf = tkFileDialog.askopenfilenames()
             if inf == '':
                 tkMessageBox.showwarning("Filename", "No file selected!")
@@ -119,28 +119,43 @@ class FirstPage(Tkinter.Tk):
                     tmp.set_xticks(barLabelPos)
                     # print(barLabels)
                     # tmp.set_xticklabels(barLabels)
-                    print(barLabels)
+                    #print(barLabels)
 
                 # Get current size
                 plt.rcParams['figure.figsize'] = (20, 20)
                 plt.show()
 
+        def latLonQueries():
+            inf = tkFileDialog.askopenfilenames()
+            if inf == '':
+                tkMessageBox.showwarning("Filename", "No file selected!")
+            else:
+                # tkMessageBox.showinfo("Filename", inf)
+                filename = inf
+
+                with open(filename[0], 'rb') as csvfile:
+                    queries = csv.reader(csvfile)
+                    counter = 0
+                    for val in queries:  # this puts one csv line into val
+                        Python2x.PyEVALIDator.fetchTable(val[0], val[1], val[2], val[3], val[4], val[5], val[6], "output" + str(counter) + ".html",val[7], val[8], val[9])
+                        counter += 1
+
         flist = ['']
         l1 = Tkinter.Label(self, text='PyEvalidator')
         b1 = Tkinter.Button(self, text="Html to Bargraph", command=htmlToBargraph)
-        b2 = Tkinter.Button(self, text="State Queries", command=infile)
+        b2 = Tkinter.Button(self, text="State Queries", command=stateQueries)
+        b3 = Tkinter.Button(self, text="Lat Lon Queries", command=latLonQueries)
         l1.pack()
-        b1.pack()
-        b2.pack()
+        b1.place(x=150, y=140)
+        #b1.pack()
+        b2.place(x=160, y=80)
+        b3.place(x=155, y = 200)
+        #b2.pack()
         if flist[0] != '':
             print flist[0]
 
 
-filename = ''
-global app
-app = FirstPage(None)
-
-
 if __name__ == '__main__':
+    app = FirstPage(None)
     app.title('Test GUI')
     app.mainloop()
