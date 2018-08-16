@@ -14,7 +14,7 @@ of = output file name (currently html file), ot = output file type (currently xm
 all arguments are strings
 '''
 ## TODO: add file type to arguments
-def fetchTable (st, yr, nm, dn, pg, r, c, of, ot, lat = 0, lon =0, rad =0, ):
+def fetchTable (st, yr, nm, dn, pg, r, c, of, ot, lat = 0, lon =0, rad =0):
     outfile = open(of, 'wb')
     BASEADDR = 'https://apps.fs.usda.gov/Evalidator/rest/Evalidator/fullreport?'
     if(lat==0 and lon ==0 and rad ==0):
