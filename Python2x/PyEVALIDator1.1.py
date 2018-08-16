@@ -3,7 +3,7 @@
 # NJ Forest Service, 11/2016
 # Python 2.7
 # dependencies: requests, bs4
-import requests, sys
+import requests, sys, json
 from bs4 import BeautifulSoup
 # fetches table using FIA EVALIDator
 # Batch URL for a given state
