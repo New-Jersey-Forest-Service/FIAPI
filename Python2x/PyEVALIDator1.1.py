@@ -35,7 +35,7 @@ def fetchTable (st, yr, nm, dn, pg, r, c, of, ot, lat = 0, lon =0, rad =0):
     OTHER = '&ptime=Current&rtime=Current&ctime=Current&wf=&wnum=&wnumdenom='
     url = BASEADDR+RETYPE+LAT+LON+RAD+num+den+stcode+yr+page+row+col+out+OTHER
     url = spaceReplace(url)
-    json = requests.get(url)
+    json = requests.get(url).json()
     soup = BeautifulSoup(json.content, 'json.parser')
     outfile.write(soup.prettify())
     outfile.close()
