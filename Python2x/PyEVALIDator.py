@@ -1,22 +1,26 @@
-#PyEVALIDator.py
-#V 1.3
-#NJ Forest Service, 11/2016
-#Python 2.7
-#dependencies: requests, bs4
-import requests, sys
+# PyEVALIDator.py
+# V 1.5
+# NJ Forest Service, 09/2018
+# Python 2.7
+# dependencies: requests, bs4
+import requests, sys, json
 from bs4 import BeautifulSoup
-#testing push
-#fetches table using FIA EVALIDator
-#Batch URL for a given state
+# fetches table using FIA EVALIDator
+# Batch URL for a given state
 '''
+***This version of PyEVALIDator is not stable and needs further
+troubleshooting as per the 09/12/2018 State of the Project.  It
+is designed to correct issues with the EVALIDator URL changes.***
+
 st = FIA state code, yr = year, nm = numerator, dn = denominator,
 pg = page variable, r = row variable, c = column variable,
-of = output file name (currently html file)
+of = output file name (currently html file), ot = output file type (currently xml)
 all arguments are strings
 '''
-def fetchTable (st, yr, nm, dn, pg, r, c, of, lat = 0, lon =0, rad =0):
+## TODO: add file type to arguments
+def fetchTable (st, yr, nm, dn, pg, r, c, of, ot, lat = 0, lon =0, rad =0):
     outfile = open(of, 'wb')
-    BASEADDR = 'http://apps.fs.fed.us/Evalidator/batcheval.jsp?'
+    BASEADDR = 'https://apps.fs.usda.gov/Evalidator/rest/Evalidator/fullreport?'
     if(lat==0 and lon ==0 and rad ==0):
         RETYPE = 'reptype=State'
     else:
@@ -31,14 +35,15 @@ def fetchTable (st, yr, nm, dn, pg, r, c, of, lat = 0, lon =0, rad =0):
     page = '&pselected='+pg
     row = '&rselected='+r
     col = '&cselected='+c
-    OTHER = '&ptime=Current&rtime=Current&ctime=Current&wf=&wnum=&wnumdenom='
+    #out = '&outputFormat='
+    #OTHER = '&ptime=Current&rtime=Current&ctime=Current&wf=&wnum=&wnumdenom='
+    OTHER = '&ptCurrent&wf=&wnum=&wnumdenom=&FIAorRPA=FIADEF&outputFormat='+ot+'&estOnly=N&schemaName=FS_FIADB.'
     url = BASEADDR+RETYPE+LAT+LON+RAD+num+den+stcode+yr+page+row+col+OTHER
     url = spaceReplace(url)
-    html = requests.get(url)
-    soup = BeautifulSoup(html.content, 'html.parser')
-    outfile.write(soup.prettify())
+    response = requests.get(url)
+    jsonVar = response.json()
+    outfile.write(jsonVar)
     outfile.close()
-
 
 #replaces spaces with %20 for clean processing of URL's
 #takes a string argument
