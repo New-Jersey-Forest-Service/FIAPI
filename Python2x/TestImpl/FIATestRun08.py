@@ -21,12 +21,13 @@ def main():
     of = ''
     ot = 'JSON'
 
-    print "Let's make some tables!"
+    print("Let's make some tables!")
     for state in states:
         st = ev.stateDict[state]
-        of = 'output'+st+'.txt'
+        ## TODO: Do we want to output the file as a .txt or .json file?? 
+        of = 'output'+st+'.txt' 
         fetchTable(st, yr, nm, dn, pg, r, c, of, ot, 0, 0, 0)
-    print 'DONE!'
+    print('DONE!')
 
 if __name__ == '__main__':
     main()
