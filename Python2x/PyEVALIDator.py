@@ -1,3 +1,4 @@
+
 # PyEVALIDator.py
 # V 2.0
 # NJ Forest Service, 09/2018
@@ -7,6 +8,7 @@ import requests, sys, json
 from bs4 import BeautifulSoup
 # fetches table using FIA EVALIDator
 # Batch URL for a given state
+
 '''
 ***This version of PyEVALIDator is stable as of 09/16.  It
 is designed to correct issues with the EVALIDator URL changes.***
@@ -20,6 +22,7 @@ all arguments are strings
 def fetchTable (st, yr, nm, dn, pg, r, c, of, ot, lat = 0, lon =0, rad =0):
     outfile = open(of, 'w')
     BASEADDR = 'https://apps.fs.usda.gov/Evalidator/rest/Evalidator/fullreport?'
+
     if(lat==0 and lon ==0 and rad ==0):
         RETYPE = 'reptype=State'
     else:
