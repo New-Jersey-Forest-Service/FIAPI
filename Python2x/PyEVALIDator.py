@@ -1,5 +1,5 @@
 # PyEVALIDator.py
-# V 1.6
+# V 2.0
 # NJ Forest Service, 09/2018
 # Python 2.7
 # dependencies: requests, bs4
