@@ -4,16 +4,18 @@
 # Python 2.7
 
 from tkinter import *
+from PyEVALIDator import fetchTable
+from EVALIDatorVars import *
 
 fields = 'State', 'Year', 'Numerator', 'Denominator', 'Page', 'Row', 'Column', 'Lat', 'Long', 'Radius'
 
-def fetch(entries):
+def fetch_fields(entries):
    for entry in entries:
       field = entry[0]
       text  = entry[1].get()
       print('%s: "%s"' % (field, text)) 
 
-def makeform(root, fields):
+def make_form(root, fields):
    entries = []
    for field in fields:
       row = Frame(root)
@@ -24,6 +26,21 @@ def makeform(root, fields):
       ent.pack(side=RIGHT, expand=YES, fill=X)
       entries.append((field, ent))
    return entries
+
+def get_data():
+ 
+    state = ev.stateDict[text[0]] + ev.get()
+    year = text[1]
+    num = ev.nmDict[text[2]] + ev.get()
+    den = ev.dmDict[text[3]] + ev.get()
+    page = text[4]
+    row = ev.rowDicttext[text[5]] + ev.get()
+    col = ev.colDicttext[text[6]] + ev.get()
+    lat = text[7]
+    lon = text[8]
+    rad = text[9]
+ 
+    lbl.configure(text= res)
 
 if __name__ == '__main__':
    root = Tk()
