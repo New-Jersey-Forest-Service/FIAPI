@@ -54,3 +54,7 @@ def spaceReplace(s):
         else:
             newStr += char
     return newStr
+
+
+if __name__ == '__main__':
+   fetchTable()
