@@ -32,16 +32,14 @@ def makeForm(root, fields):
   return entries
 
 def main():
-    #define inputs for fetchTable
-    #fetchTable(st, yr, nm, dn, pg, r, c, of)
-    states = 
-    st = 
-    yr = 
-    nm = ev.nmDict[]
-    dn = ev.dmDict[]
+    states = entries.get(entries[0])
+    st = ''
+    yr = entries.get(entries[1])
+    nm = ev.nmDict[entries.get(entries[2])]
+    dn = ev.dmDict[entries.get(entries[3])]
     pg = 'None'
-    r = ev.rowDict[]
-    c = ev.colDict[]
+    r = ev.rowDict[entries.get(entries[5])]
+    c = ev.colDict[entries.get(entries[6])]
     of = ''
     ot = 'JSON'
 
