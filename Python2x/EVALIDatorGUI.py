@@ -3,13 +3,21 @@
 # NJ Forest Service, 10/2018
 # Python 2.7
 
+import pandas as pd
 from tkinter import *
 from PyEVALIDator import fetchTable
 from EVALIDatorVars import *
 
+## TODO: input an excel file with parameters and then hit fetchtable()
+
+## TODO: make fields a dictionary?? 
 fields = ['State', 'Year', 'Numerator', 'Denominator', 'Page', 'Row', 'Column', 'Lat', 'Long', 'Radius']
 ev = EVALIDatorVars()
 entries = []
+
+def excelData(filename):
+  excel_file = pd.read_csv(filename)
+  
 
 def fetchFields(entries):
   for entry in entries:
@@ -32,14 +40,14 @@ def makeForm(root, fields):
   return entries
 
 def main():
-    states = entries.get(entries[0])
+    states = fields.get(entries)
     st = ''
-    yr = entries.get(entries[1])
-    nm = ev.nmDict[entries.get(entries[2])]
-    dn = ev.dmDict[entries.get(entries[3])]
+    yr = fields.get(entries)
+    nm = ev.nmDict[fields.get(entries)]
+    dn = ev.dmDict[fields.get(entries)]
     pg = 'None'
-    r = ev.rowDict[entries.get(entries[5])]
-    c = ev.colDict[entries.get(entries[6])]
+    r = ev.rowDict[fields.get(entries)]
+    c = ev.colDict[fields.get(entries)]
     of = ''
     ot = 'JSON'
 
