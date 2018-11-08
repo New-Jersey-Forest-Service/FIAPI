@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/wzip/FIAPI.svg?branch=master)](https://travis-ci.org/wzip/FIAPI)
-
+[![Build Status](https://travis-ci.org/New-Jersey-Forest-Service/FIAPI.svg?branch=master)](https://travis-ci.org/New-Jersey-Forest-Service/FIAPI)
 
 # FIAPI
 Applications and Libraries for USDA Forest Service, FIA Program's EVALIDator
