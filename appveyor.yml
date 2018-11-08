@@ -1,0 +1,29 @@
+environment:
+
+  matrix:
+
+    # For Python versions available on Appveyor, see
+    # http://www.appveyor.com/docs/installed-software#python
+
+    - PYTHON: "C:\\Python27"
+    - PYTHON: "C:\\Python27-x64"
+    - PYTHON: "C:\\Python35"
+    - PYTHON: "C:\\Python35-x64"
+
+install:
+  #dependencies
+  - "%PYTHON%\\python.exe -m pip install pytest"
+
+build: off
+
+test_script:
+  # Put your test command here.
+  - "%PYTHON%\\python.exe pytest"
+
+#after_test:
+
+
+#artifacts:
+
+
+#on_success:
