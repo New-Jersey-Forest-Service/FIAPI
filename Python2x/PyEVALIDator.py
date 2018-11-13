@@ -20,7 +20,7 @@ all arguments are strings
 '''
 
 def fetchTable (st, yr, nm, dn, pg, r, c, of, ot, lat = 0, lon =0, rad =0):
-    outfile = open(of, 'w')
+    #outfile = open(of, 'w')
     BASEADDR = 'https://apps.fs.usda.gov/Evalidator/rest/Evalidator/fullreport?'
 
     if(lat==0 and lon ==0 and rad ==0):
@@ -41,7 +41,9 @@ def fetchTable (st, yr, nm, dn, pg, r, c, of, ot, lat = 0, lon =0, rad =0):
     url = spaceReplace(url)
     response = requests.get(url)
     jsonVar = response.json()
-    json.dump(jsonVar, outfile)
+    return response
+    return jsonVar
+    #json.dump(jsonVar, outfile)
 
 #replaces spaces with %20 for clean processing of URL's
 #takes a string argument

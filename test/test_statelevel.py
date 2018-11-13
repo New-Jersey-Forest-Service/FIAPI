@@ -51,6 +51,31 @@ of = ''
 ot = 'JSON'
 of = 'TESTINGoutput'+st+'.txt' 
 t1=fetchTable(st, yr, nm, dn, pg, r, c, of, ot, 0, 0, 0)
+#print t1
+print t1.status_code
+print t1.encoding
+print t1.raise_for_status()
+#print t1.json()
+#print type(t1.json)
+#print type(t1)
+#print t1.status_code == 200
 
-#def state_test():
- #   assert main
+#https://www.reddit.com/r/learnprogramming/comments/30kbfy/how_are_api_wrapper_unit_tests_written/
+#Class def 
+def test_httpcode():
+    ev = EVALIDatorVars()
+    st = '34'
+    yr = '2015'
+    nm = 'Area of timberland, in acres'
+    dn = ev.dmDict['nodenominator']
+    pg = 'None'
+    r = 'Stand age 10 yr classes'
+    c = 'Reserved status class'
+    of = ''
+    ot = 'JSON'
+    of = 'TESTINGoutput'+st+'.txt' 
+    t1=fetchTable(st, yr, nm, dn, pg, r, c, of, ot, 0, 0, 0)
+
+    assert t1.status_code == 200
+
+test_httpcode()
