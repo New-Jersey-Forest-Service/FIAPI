@@ -1,49 +1,56 @@
-#approx port of FiaTestRun03.py for CI; stripped out read csv to remove deps
+#approx port of FiaTestRun08.py for CI; stripped out read csv to remove deps
 # test for ?
 
 import unittest
 import pytest
 
-from PyEVALIDator import fetchTable
-#import csv
+from Python2x.PyEVALIDator import *
+import csv 
+from Python2x.EVALIDatorVars import *
 
+"""
 def main():
-    i = 1
-    while (i < 4):
-        #define inputs for fetchTable
-        #fetchTable(st, yr, nm, dn, pg, r, c, of)
-        states = ('33','34','35')
-        st = ''
-        yr = '2015'
-        nm = ''
-        dn = ''
-        pg = 'None'
-        r = 'Forest type group'
-        c = 'Ownership group'
-        of = ''
-        if (i == 1):
-            nm = 'Area of forest land, in acres'
-            dn = 'No denominator - just produce estimate.'
-            ofprfix = 'FArea'
-        elif (i == 2):
-            nm = 'Number of growing-stock trees (at least 5 inches d.b.h.), in trees, on forest land'
-            dn = 'No denominator - just produce estimate.'
-            ofprfix = 'GsTrees'
-        else:
-            nm = 'Number of growing-stock trees (at least 5 inches d.b.h.), in trees, on forest land'
-            dn = 'Area of forest land, in acres'
-            ofprfix = 'TPA'
-        print "Let's make some tables! Run: "+str(i)
-        for state in states:
-            st = state[1]
-            #st = state
-            of = 'out'+ofprfix+st+'.html'
-            fetchTable(st, yr, nm, dn, pg, r, c, of)
-        print 'DONE!'
-        i += 1
+    #define inputs for fetchTable
+    #fetchTable(st, yr, nm, dn, pg, r, c, of)
+    states = ['NJ','NY','MD']
+    ev = EVALIDatorVars()
+    st = ''
+    yr = '2015'
+    nm = 'Area of timberland, in acres'
+    dn = ev.dmDict['nodenominator']
+    pg = 'None'
+    #r = 'Stand age 10 yr classes'
+    #c = 'Reserved status class'
+    r = 'Stand age 10 yr classes'
+    c = 'Reserved status class'
+    of = ''
+    ot = 'JSON'
+
+    print("Let's make some tables!")
+    for state in states:
+        st = ev.stateDict[state]
+        ## TODO: Do we want to output the file as a .txt or .json file?? 
+        of = 'output'+st+'.txt' 
+        fetchTable(st, yr, nm, dn, pg, r, c, of, ot, 0, 0, 0)
+    print('DONE!')
 
 if __name__ == '__main__':
     main()
 
-def state_test():
-    assert main
+"""
+
+ev = EVALIDatorVars()
+st = '34'
+yr = '2015'
+nm = 'Area of timberland, in acres'
+dn = ev.dmDict['nodenominator']
+pg = 'None'
+r = 'Stand age 10 yr classes'
+c = 'Reserved status class'
+of = ''
+ot = 'JSON'
+of = 'TESTINGoutput'+st+'.txt' 
+t1=fetchTable(st, yr, nm, dn, pg, r, c, of, ot, 0, 0, 0)
+
+#def state_test():
+ #   assert main
