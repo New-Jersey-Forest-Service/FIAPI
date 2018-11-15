@@ -42,7 +42,7 @@ def fetchTable (st, yr, nm, dn, pg, r, c, of, ot, lat = 0, lon =0, rad =0):
     response = requests.get(url)
     jsonVar = response.json()
     return response
-    return jsonVar
+    #return jsonVar
     #json.dump(jsonVar, outfile)
 
 #replaces spaces with %20 for clean processing of URL's
