@@ -1,5 +1,5 @@
 # EVALIDatorVars.py
-# V 2.0
+# V 2.1
 # NJ Forest Service, 09/2018
 # Python 2.7
 

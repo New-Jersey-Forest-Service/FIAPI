@@ -1,6 +1,6 @@
 
 # PyEVALIDator.py
-# V 2.0
+# V 2.1
 # NJ Forest Service, 09/2018
 # Python 2.7
 # dependencies: requests, bs4
@@ -40,8 +40,20 @@ def fetchTable (st, yr, nm, dn, pg, r, c, of, ot, lat = 0, lon =0, rad =0):
     url = BASEADDR+RETYPE+LAT+LON+RAD+num+den+stcode+yr+page+row+col+OTHER
     url = spaceReplace(url)
     response = requests.get(url)
-    jsonVar = response.json()
-    json.dump(jsonVar, outfile)
+    if ot == 'JSON':
+        jsonVar = response.json()
+        json.dump(jsonVar, outfile)
+    elif ot == 'HTML':
+        soup = BeautifulSoup(response.content, 'html.parser')
+        outfile.write(soup.prettify())
+        outfile.close()
+    elif ot == 'XML':
+        soup = BeautifulSoup(response.content, 'html.parser')
+        outfile.write(soup.prettify())
+        outfile.close()
+    else:
+        print "Please specify a valid output type"
+        pass
 
 #replaces spaces with %20 for clean processing of URL's
 #takes a string argument
