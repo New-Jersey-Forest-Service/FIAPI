@@ -2,7 +2,7 @@
 Applications and Libraries for USDA Forest Service, FIA Program's EVALIDator
 
 
-FIAPI provides batch reporting capabilities for EVALIDator queries using Python 2.7 or R. This library follows the protocol released by FIA detailing protocols for retreiving queries by building HTML strings directly (Miles 2015: https://apps.fs.usda.gov/fia/datamart/datamart_api_tutorials.html).
+FIAPI provides batch reporting capabilities for EVALIDator queries using Python 2.7. This library follows the protocol released by FIA detailing protocols for retreiving queries by building HTML strings directly (Miles 2015: https://apps.fs.usda.gov/fia/datamart/datamart_api_tutorials.html).
 
 Python functionality is provided using the BeautifulSoup package (https://www.crummy.com/software/BeautifulSoup/), while the R version utilizes the library Rvest (https://github.com/hadley/rvest).
 
