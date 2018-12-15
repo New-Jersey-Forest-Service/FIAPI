@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/New-Jersey-Forest-Service/FIAPI.svg?branch=master)](https://travis-ci.org/New-Jersey-Forest-Service/FIAPI)
+
 # FIAPI
 Applications and Libraries for USDA Forest Service, FIA Program's EVALIDator
 
@@ -34,7 +36,7 @@ Use Case: By providing users with a standardized interface to access data, users
    - On the FIAPI github page, click the green button and copy the https clone link.
    - Now download and install git for windows. It can be found here (https://git-for-windows.github.io/).
    - Once setup, run **git clone https://github.com/wzip/FIAPI.git** (this is the link you copied). 
-4. Now you can run the FIATestRun09.py to test out the library. In command prompt type C:\Path\to\Python27\python.exe C:\Path\to\FIAPI\Python2x\TestImpl\FIATestRun09.py It can also be run by editing FIATestRun09.py in Idle and selecting the "run" option (or pressing F5).
+4. Now you can run the FIATestRun09.py to test out the library. In command prompt type **C:\Path\to\Python27\python.exe C:\Path\to\FIAPI\Python2x\TestImpl\FIATestRun09.py** It can also be run by editing FIATestRun09.py in Idle and selecting the "run" option (or pressing F5).
 
 ## Licensing
 No code was modified in the "Requests" library for Python for use in this project.  Licensing for "Requests" may be found at: http://docs.python-requests.org/en/master/user/intro/#requests-license
