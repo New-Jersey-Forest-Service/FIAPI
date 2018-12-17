@@ -4,7 +4,7 @@
 Applications and Libraries for USDA Forest Service, FIA Program's EVALIDator
 
 
-FIAPI provides batch reporting capabilities for EVALIDator queries using Python 2.7 or R. This library follows the protocol released by FIA detailing protocols for retreiving queries by building HTML strings directly (Miles 2015: https://apps.fs.usda.gov/fia/datamart/datamart_api_tutorials.html).
+FIAPI provides batch reporting capabilities for EVALIDator queries using Python 2.7. This library follows the protocol released by FIA detailing protocols for retreiving queries by building HTML strings directly (Miles 2015: https://apps.fs.usda.gov/fia/datamart/datamart_api_tutorials.html).
 
 Python functionality is provided using the BeautifulSoup package (https://www.crummy.com/software/BeautifulSoup/), while the R version utilizes the library Rvest (https://github.com/hadley/rvest).
 
@@ -12,10 +12,10 @@ Use Case: By providing users with a standardized interface to access data, users
 
 ## Installation Instructions for Mac
 1. Install the latest version of Python 2.7. This can be installed from (https://www.python.org/downloads/release/python-2713/)
-2. Next, install the BeautifulSoup 4 and requests libraries. The easiest way to install this is with pip. 
+2. Next, install the BeautifulSoup 4 and requests libraries. The easiest way to install these is with pip. 
    - If you don't have pip, run **sudo easy_install pip** in your terminal
-   - Then run **pip install bs4**
-   - Then run **pip install requests**
+   - Run **pip install bs4**
+   - Run **pip install requests**
 3. Now clone this repository onto your computer.
    - Click the green button in the top right that says **Clone or download** and clone with whichever method your prefer.
    - Click the clipboard to copy the link to your clipboard
@@ -27,10 +27,11 @@ Use Case: By providing users with a standardized interface to access data, users
 
 ## Installation Instructions for Windows
 1. Install the latest version of Python 2.7. This can be installed from (https://www.python.org/downloads/release/python-2713/)
-2. Next, install the BeautifulSoup 4 and requests libraries. The easiest way to install this is with pip. 
-   - pip is already included in the Python 2.7 installation
-   - Run **pip install bs4**
-   - Run **pip install requests**
+2. Next, install the BeautifulSoup 4 and requests libraries. The easiest way to install these is with pip. 
+   - locate a command prompt by searching in the start menu or seach box in Windows 10 for **cmd**
+   - Right click on the item labeled **Command Prompt** and select "Run as administrator"
+   - At the prompt type **pip install bs4** and hit "Enter"
+   - At the prompt type **pip install requests** and hit "Enter"
 3. Now you need to clone the github repository.
    - On the FIAPI github page, click the green button and copy the https clone link.
    - Now download and install git for windows. It can be found here (https://git-for-windows.github.io/).
