@@ -60,7 +60,7 @@ def generate_tables(INPUT_FILENAME, OUTPUT_FILENAME):
     ## Generate output for positive
     rdr = create_data(filename=INPUT_FILENAME)
     ## Queried data
-    dentist_specialist_output = gen_critical_states(df)
-    save_xlsx(dentist_specialist_output, OUTPUT_FILENAME)
+    bacth_query_output = query_data(rdr)
+    save_xlsx(bacth_query_output, OUTPUT_FILENAME)
     
 
