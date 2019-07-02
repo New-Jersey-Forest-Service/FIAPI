@@ -9,6 +9,14 @@ def deleteoldfiles():
     else:
         print("Previous File Not Found")
 
+    if os.path.exists (r"C:\Users\Abdul\Documents\GitHub\FIAPI\Python3x\Pineland_CNS.xlsx"):
+        os.remove(r"C:\Users\Abdul\Documents\GitHub\FIAPI\Python3x\Pineland_CNS.xlsx")
+
+    else:
+        print("Previous File Not Found")
+
+
+
 
     arcpy.management.Delete(r"C:\Users\Abdul\Documents\GitHub\FIAPI\Python3x\CNPlots.gdb\Plotted_CNs;C:\Users\Abdul\Documents\GitHub\FIAPI\Python3x\CNPlots.gdb\SpatiallyJoined_Plots", None)
 
