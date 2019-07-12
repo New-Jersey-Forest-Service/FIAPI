@@ -7,13 +7,13 @@ def deleteoldfiles():
         os.remove(r"C:\Users\Abdul\Documents\GitHub\FIAPI\Python3x\reftable.csv")
 
     else:
-        print("Previous File Not Found")
+        pass
 
-    if os.path.exists (r"C:\Users\Abdul\Documents\GitHub\FIAPI\Python3x\Pineland_CNS.xlsx"):
-        os.remove(r"C:\Users\Abdul\Documents\GitHub\FIAPI\Python3x\Pineland_CNS.xlsx")
+    if os.path.exists (r"C:\Users\Abdul\Documents\GitHub\FIAPI\Python3x\Pineland_CNS.csv"):
+        os.remove(r"C:\Users\Abdul\Documents\GitHub\FIAPI\Python3x\Pineland_CNS.csv")
 
     else:
-        print("Previous File Not Found")
+        pass
 
 
 

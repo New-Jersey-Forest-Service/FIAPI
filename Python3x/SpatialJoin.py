@@ -20,11 +20,10 @@ def spatialjoin():
                            "JOIN_ONE_TO_ONE", "KEEP_COMMON",
                            'CN "CN" true true false 8 Double 0 0,First,#,refTable_XYTableToPoint,CN,-1,-1;LON "LON" true true false 8 Double 0 0,First,#,refTable_XYTableToPoint,LON,-1,-1;LAT "LAT" true true false 8 Double 0 0,First,#,refTable_XYTableToPoint,LAT,-1,-1;OBJECTID "OBJECTID" true true false 4 Long 0 0,First,#,NJ,OBJECTID,-1,-1;DESIGNATIO "DESIGNATIO" true true false 80 Text 0 0,First,#,NJ,DESIGNATIO,0,80;WEB_LINK "WEB_LINK" true true false 80 Text 0 0,First,#,NJ,WEB_LINK,0,80;ACRES "ACRES" true true false 8 Double 0 0,First,#,NJ,ACRES,-1,-1;GLOBALID "GLOBALID" true true false 80 Text 0 0,First,#,NJ,GLOBALID,0,80;SHAPE_Leng "SHAPE_Leng" true true false 8 Double 0 0,First,#,NJ,SHAPE_Leng,-1,-1;Shape_Length "Shape_Length" false true true 8 Double 0 0,First,#,NJ,Shape_Length,-1,-1;Shape_Area "Shape_Area" false true true 8 Double 0 0,First,#,NJ,Shape_Area,-1,-1',
                            "CLOSEST", ".5 Miles", None)
+    arcpy.conversion.TableToTable(r"C:\Users\Abdul\Documents\GitHub\FIAPI\Python3x\CNPlots.gdb\SpatiallyJoined_Plots",
+                                  r"C:\Users\Abdul\Documents\GitHub\FIAPI\Python3x", "Pineland_CNS.csv", None, r'CN "CN" true true false 8 Double 0 0,First,#,C:\Users\Abdul\Documents\GitHub\FIAPI\Python3x\CNPlots.gdb\SpatiallyJoined_Plots,CN,-1,-1;DESIGNATIO "DESIGNATIO" true true false 80 Text 0 0,First,#,C:\Users\Abdul\Documents\GitHub\FIAPI\Python3x\CNPlots.gdb\SpatiallyJoined_Plots,DESIGNATIO,0,80', None)
 
-    arcpy.conversion.TableToExcel(r"C:\Users\Abdul\Documents\GitHub\FIAPI\Python3x\CNPlots.gdb\SpatiallyJoined_Plots",
-                                  r"C:\Users\Abdul\Documents\GitHub\FIAPI\Python3x\Pineland_CNS.xlsx", "NAME", "CODE") 
-
-
+   
 
 
 

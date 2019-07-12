@@ -1,7 +1,2 @@
 state,year,numerator,denominator,page,row,column,outputFile,outputType,latitude,longitude,radius
-NJ,2015,"Area of forest land, in acres",No denominator - just produce estimates,None,Stand age 10 yr classes,Reserved status class,OutputNJ01.html,HTML,0,0,0
-NY,2015,"Area of forest land, in acres",No denominator - just produce estimates,None,Stand age 10 yr classes,Reserved status class,OutputNY01.html,HTML,0,0,0
-MD,2015,"Area of forest land, in acres",No denominator - just produce estimates,None,Stand age 10 yr classes,Reserved status class,OutputMD01.html,HTML,0,0,0
-NJ,2015,"Area of forest land, in acres",No denominator - just produce estimates,None,Stand age 10 yr classes,Reserved status class,OutputNJ01.json,JSON,0,0,0
-NY,2015,"Area of forest land, in acres",No denominator - just produce estimates,None,Stand age 10 yr classes,Reserved status class,OutputNY01.json,JSON,0,0,0
-MD,2015,"Area of forest land, in acres",No denominator - just produce estimates,None,Stand age 10 yr classes,Reserved status class,OutputMD01.json,JSON,0,0,0
+NJ,2017,"Area of forest land, in acres",No denominator - just produce estimates,None,Forest type group,Forest type,OutputNJ01.html,HTML,0,0,0

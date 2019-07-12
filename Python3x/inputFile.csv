@@ -1,0 +1,2 @@
+state,year,numerator,denominator,page,row,column,outputFile,outputType,latitude,longitude,radius
+NJ,2017,"Area of forest land, in acres",No denominator - just produce estimates,None,Forest type ,Forest type group abbr,OutputNJ01.html,HTML,0,0,0
