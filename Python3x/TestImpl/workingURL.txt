@@ -1,0 +1,5 @@
+This is a working example of the new EVALIDator code as per the 
+"State of the Project" 09/12/2018 meeting.
+
+
+https://apps.fs.usda.gov/Evalidator/rest/Evalidator/fullreport?reptype=Circle&lat=45&lon=-93&radius=50&snum=Area%20of%20timberland,%20in%20acres&sdenom=No%20denominator%20-%20just%20produce%20estimates&wc=552015&pselected=None&rselected=Stand-size%20class&cselected=Ownership%20group&ptime=Current&rtime=Current&ctime=Current&wf=&wnum=&wnumdenom=&FIAorRPA=FIADEF&outputFormat=JSON&estOnly=N&schemaName=FS_FIADB.
