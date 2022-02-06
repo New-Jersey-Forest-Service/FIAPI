@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/New-Jersey-Forest-Service/FIAPI.svg?branch=master)](https://travis-ci.org/New-Jersey-Forest-Service/FIAPI)
-
+## Please be aware that this library is no longer being updated or maintained, due to changes in the FIA EVALIDator interface!
+## The code from this project will remain avaialable so that those who find it useful may continue to use it.
 # FIAPI
 Applications and Libraries for USDA Forest Service, FIA Program's EVALIDator
 
@@ -8,7 +9,7 @@ FIAPI provides batch reporting capabilities for EVALIDator queries using Python 
 
 Python functionality is provided using the BeautifulSoup package (https://www.crummy.com/software/BeautifulSoup/), while the R version utilizes the library Rvest (https://github.com/hadley/rvest).
 
-Use Case: By providing users with a standardized interface to access data, users can have the most up to date data pull without waiting for an MS Access DB to be released. {to be continued...}
+Use Case: By providing users with a standardized interface to access data, users can have the most up to date data pull without waiting for an MS Access DB to be released.
 
 ## Installation Instructions for Mac
 1. Install the latest version of Python 2.7. This can be installed from (https://www.python.org/downloads/release/python-2713/)
